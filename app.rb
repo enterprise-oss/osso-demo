@@ -3,6 +3,7 @@
 require 'sinatra/reloader'
 require 'sinatra/cors'
 require 'osso'
+require_relative 'lib/osso/helpers/auth'
 
 class App < Sinatra::Base
   include Osso::AppConfig
