@@ -1094,9 +1094,9 @@
   integrity sha512-ggujk7KK9KakleY05RfhwzLjUB7SMojXDYQPsMhA0Sva1sNPpKpu4W7A0Abs4thcNmM3QztNL5pF1ozLHqdPIw==
 
 "@enterprise-oss/osso@^0.0.5-alpha.44":
-  version "0.0.5-alpha.44"
-  resolved "https://registry.yarnpkg.com/@enterprise-oss/osso/-/osso-0.0.5-alpha.44.tgz#425b37eb5a841be75a89d45e72bc5d8eafb3f7f0"
-  integrity sha512-x9ObjkO2b7YlntOxIx/3tpDwNZ76iWr7Xll0e+rigC89I0pHQFCzUT9ggroBAx/QMllQHXqYV+VhgZAdoT9BcQ==
+  version "0.0.5-alpha.46"
+  resolved "https://registry.yarnpkg.com/@enterprise-oss/osso/-/osso-0.0.5-alpha.46.tgz#35ff73f73671885cfa4a362916aeef740258f6de"
+  integrity sha512-x5NdQ9Z6OEH04alAA+ixJPoqHKjLaXc2JCNxNPxXlzzGvzCAx+ERLv5Hik52Qm4d7JGE1330PSCORjDKH+4cAg==
   dependencies:
     "@apollo/client" "^3.0.0-rc.10"
     "@pdf-lib/fontkit" "^1.0.0"
@@ -2627,9 +2627,9 @@
     "@types/yargs-parser" "*"
 
 "@types/zen-observable@^0.8.0":
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/@types/zen-observable/-/zen-observable-0.8.0.tgz#8b63ab7f1aa5321248aad5ac890a485656dcea4d"
-  integrity sha512-te5lMAWii1uEJ4FwLjzdlbw3+n0FZNOvFXHxQDKeT0dilh7HOzdMzV2TrJVUzq8ep7J4Na8OUYPRLSQkJHAlrg==
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/@types/zen-observable/-/zen-observable-0.8.1.tgz#5668c0bce55a91f2b9566b1d8a4c0a8dbbc79764"
+  integrity sha512-wmk0xQI6Yy7Fs/il4EpOcflG4uonUpYGqvZARESLc2oy4u69fkatFLbJOeW4Q6awO15P4rduAe6xkwHevpXcUQ==
 
 "@typescript-eslint/eslint-plugin@^3.10.1":
   version "3.10.1"
@@ -10894,9 +10894,9 @@ terser@^4.3.9:
     source-map-support "~0.5.12"
 
 terser@^5.2.0:
-  version "5.2.1"
-  resolved "https://registry.yarnpkg.com/terser/-/terser-5.2.1.tgz#40b971b8d28b4fe98c9e8c0d073ab48e7bb96cd8"
-  integrity sha512-/AOtjRtAMNGO0fIF6m8HfcvXTw/2AKpsOzDn36tA5RfhRdeXyb4RvHxJ5Pah7iL6dFkLk+gOnCaNHGwJPl6TrQ==
+  version "5.3.1"
+  resolved "https://registry.yarnpkg.com/terser/-/terser-5.3.1.tgz#f50fe20ab48b15234fe9bdd86b10148ad5fca787"
+  integrity sha512-yD80f4hdwCWTH5mojzxe1q8bN1oJbsK/vfJGLcPZM/fl+/jItIVNKhFIHqqR71OipFWMLgj3Kc+GIp6CeIqfnA==
   dependencies:
     commander "^2.20.0"
     source-map "~0.6.1"
