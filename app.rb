@@ -3,6 +3,7 @@
 require 'sinatra/reloader'
 require 'sinatra/cors'
 require 'osso'
+require_relative 'lib/osso/helpers/auth'
 
 class App < Sinatra::Base
   include Osso::AppConfig
@@ -22,15 +23,10 @@ class App < Sinatra::Base
   set :expose_headers, 'location,link'
 
   get '/' do
-    redirect '/admin/enterprise' # if ENV['RACK_ENV'] == 'development'
+    redirect '/admin/enterprise'
   end
 
   get '/health' do
     'ok'
-  end
-
-  # TODO: move to gem and build the actual PDF writer
-  get '/identity_provider/documentation/:id' do
-    send_file('okta.pdf', disposition: 'attachment', filename: 'Okta Setup Docs.pdf')
   end
 end
