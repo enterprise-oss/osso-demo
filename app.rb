@@ -6,17 +6,13 @@ require 'osso'
 require_relative 'lib/osso/helpers/auth'
 
 class App < Sinatra::Base
+  use Rack::SslEnforcer
   include Osso::AppConfig
   include Osso::Helpers::Auth
   include Osso::RouteMap
 
   configure :development do
     register Sinatra::Reloader
-  end
-  
-  configure :production do
-    set :host, 'demo.ossoapp.com'
-    set :force_ssl, true
   end
 
   register Sinatra::ActiveRecordExtension
