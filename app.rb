@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require 'rack/ssl-enforcer'
 require 'sinatra/reloader'
 require 'sinatra/cors'
 require 'osso'
