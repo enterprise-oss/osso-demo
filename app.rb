@@ -13,6 +13,11 @@ class App < Sinatra::Base
   configure :development do
     register Sinatra::Reloader
   end
+  
+  configure :production do
+    set :host, 'demo.ossoapp.com'
+    set :force_ssl, true
+  end
 
   register Sinatra::ActiveRecordExtension
   register Sinatra::Cors
