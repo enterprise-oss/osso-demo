@@ -8,9 +8,6 @@ require_relative 'lib/osso/helpers/auth'
 
 class App < Sinatra::Base
   use Rack::SslEnforcer
-  include Osso::AppConfig
-  include Osso::Helpers::Auth
-  include Osso::RouteMap
 
   configure :development do
     register Sinatra::Reloader
@@ -23,7 +20,11 @@ class App < Sinatra::Base
   set :allow_methods, 'GET,HEAD,POST,OPTIONS'
   set :allow_headers, 'content-type,if-modified-since'
   set :expose_headers, 'location,link'
-
+  
+  include Osso::AppConfig
+  include Osso::Helpers::Auth
+  include Osso::RouteMap
+  
   get '/' do
     redirect '/admin/enterprise'
   end
