@@ -1191,9 +1191,10 @@
   resolved "https://registry.yarnpkg.com/@enterprise-oss/ant-theme/-/ant-theme-1.0.4.tgz#4ba559710d8a0c276720debe754f3dff59a7e4b2"
   integrity sha512-Ct1xYrPDcCGtJaMRP2k+ILGDjke9ONLexV+A+QDv/8rjMLt5hVSsmQgbRt+gEkXDmhte/pI2FgPWOJCWnZGb/g==
 
-"@enterprise-oss/osso@enterprise-oss/osso-react#sbauch/cors-fixes":
+"@enterprise-oss/osso@^0.0.8":
   version "0.0.8"
-  resolved "https://codeload.github.com/enterprise-oss/osso-react/tar.gz/65bd951154378fd8414dd94363d684e2b621f993"
+  resolved "https://registry.yarnpkg.com/@enterprise-oss/osso/-/osso-0.0.8.tgz#c52550f0a7a6cbf3361729fd30f2bb719cd7cf8d"
+  integrity sha512-thPV532SAPP8AqJKaFmVsp8myTTBTZCshlakQe8Mqc9DwRGpI8gvfKBmQ8X7WErqyaeO+rrfpD83aJuSDQleqQ==
   dependencies:
     "@apollo/client" "^3.0.0-rc.10"
     "@pdf-lib/fontkit" "^1.0.0"
@@ -11110,9 +11111,9 @@ symbol-observable@^1.1.0:
   integrity sha512-e900nM8RRtGhlV36KGEU9k65K3mPb1WV70OdjfxlG2EAuM1noi/E/BaW/uMhL7bPEssK8QV57vN3esixjUvcXQ==
 
 symbol-observable@^2.0.0:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-2.0.1.tgz#ce66c36a04ed0f3056e7293184749a6fdd7063ea"
-  integrity sha512-QrfHrrEUMadQCgMijc3YpfA4ncwgqGv58Xgvdu3JZVQB7iY7cAkiqobZEZbaA863jof8AdpR01CPnZ5UWeqZBQ==
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-2.0.3.tgz#5b521d3d07a43c351055fa43b8355b62d33fd16a"
+  integrity sha512-sQV7phh2WCYAn81oAkakC5qjq2Ml0g8ozqz03wOGnx9dDlG1de6yrF+0RAzSJD8fPUow3PTSMf2SAbOGxb93BA==
 
 symbol-tree@^3.2.2, symbol-tree@^3.2.4:
   version "3.2.4"
