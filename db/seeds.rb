@@ -5,7 +5,7 @@ oauth_client = Osso::Models::OauthClient.create!(
 
 Osso::Models::EnterpriseAccount.create!(
   name: 'SaaS Co Customer',
-  domain: 'customer.com',
+  domain: 'example.com',
   oauth_client: oauth_client,
 )
 
