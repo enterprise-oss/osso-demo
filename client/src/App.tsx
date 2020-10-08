@@ -3,8 +3,9 @@ import '@enterprise-oss/ant-theme';
 import { OssoProvider } from '@enterprise-oss/osso';
 import { withProfiler } from '@sentry/react';
 import { Layout } from 'antd';
-import React, { ReactElement } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import posthog from 'posthog-js';
+import React, { ReactElement, useEffect } from 'react';
+import { Route, Switch, useLocation } from 'react-router-dom';
 
 import styles from './App.module.css';
 import Header from './components/Header';
@@ -13,9 +14,16 @@ import DeveloperConfig from './pages/developerConfiguration';
 import EnterpriseAccount from './pages/enterpriseAccount';
 import EnterpriseAccounts from './pages/enterpriseAccounts';
 import OauthClientConfig from './pages/oauthClientConfig';
-import { compose } from './utils/compose';
 
 function App(): ReactElement {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (!process.env.POSTHOG_API_KEY) return;
+
+    posthog.capture('$pageview');
+  }, [location]);
+
   return (
     <OssoProvider>
       <Layout>
