@@ -21,6 +21,10 @@ if (process.env.POSTHOG_TOKEN) {
   posthog.init(process.env.POSTHOG_TOKEN, {
     api_host: process.env.POSTHOG_API_HOST,
   });
+
+  posthog.register({
+    plan: process.env.OSSO_PLAN || 'community',
+  });
 }
 
 ReactDOM.render(
