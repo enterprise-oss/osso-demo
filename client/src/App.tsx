@@ -36,4 +36,4 @@ function App(): ReactElement {
   );
 }
 
-export default compose(withProfiler(App));
+export default withProfiler(App);
