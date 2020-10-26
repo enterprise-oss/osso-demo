@@ -66,7 +66,7 @@
     "@enterprise-oss/osso": "^0.0.8",
     "@sentry/react": "^5.25.0",
     "@sentry/tracing": "^5.25.0",
-    "antd": "^4.6.6",
+    "antd": "^4.7.3",
     "date-fns": "^2.16.1",
     "fast-xml-parser": "^3.17.4",
     "posthog-js": "^1.4.5",
