@@ -2,6 +2,12 @@
 # frozen_string_literal: true
 
 require 'bundler/setup'
+
+if ENV['RACK_ENV'] != 'production'
+  require 'dotenv'
+  Dotenv.load('.env', '.env.development', '.env.test')
+end
+
 require 'irb'
 require_relative '../app'
 

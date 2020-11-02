@@ -15,6 +15,7 @@ gem 'rack-cors'
 gem 'rake'
 gem 'sinatra'
 
+gem 'posthog-ruby'
 gem 'sentry-raven'
 
 group :test do

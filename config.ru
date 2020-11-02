@@ -23,17 +23,16 @@ app = Rack::Builder.new do
   use Rack::Cors do
     allow do
       origins '*'
-      resource '/pdfv1/*', headers: :any, methods: [:get, :options]
+      resource '/pdfv1/*', headers: :any, methods: %i[get options]
     end
 
     allow do
       origins '*'
-      resource '/graphql', headers: :any, methods: [:post, :options]
+      resource '/graphql', headers: :any, methods: %i[post options]
     end
   end
 
   run App
 end
-
 
 run app
