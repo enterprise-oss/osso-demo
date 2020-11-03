@@ -8,14 +8,14 @@ source 'https://rubygems.org'
 
 gem 'activesupport', '>= 6.0.3.2'
 gem 'graphql'
-gem 'osso', '= 0.0.5.pre.lambda'
+gem 'osso', git: 'https://github.com/enterprise-oss/osso-rb', branch: 'sbauch/rodauth'
+gem 'posthog-ruby'
 gem 'pg'
 gem 'rack', '>= 2.1.4'
 gem 'rack-cors'
 gem 'rake'
+gem 'rodauth', git: 'https://github.com/jeremyevans/rodauth'
 gem 'sinatra'
-
-gem 'posthog-ruby'
 gem 'sentry-raven'
 
 group :test do
@@ -23,7 +23,7 @@ group :test do
   gem 'factory_bot'
   gem 'faker'
   gem 'rack-test'
-  gem 'rspec', '~> 3.2'
+  gem 'rspec', '~> 3.10'
   gem 'simplecov', '= 0.17', require: false
   gem 'webmock', '~> 3.9'
 end
