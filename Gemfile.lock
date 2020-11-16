@@ -1,28 +1,4 @@
 GIT
-  remote: https://github.com/enterprise-oss/osso-rb
-  revision: aa34fb0edfa2823a80b31120dad76ecf8c831e5e
-  branch: sbauch/rodauth
-  specs:
-    osso (0.0.5.pre.lambda)
-      activesupport (>= 6.0.3.2)
-      bcrypt (~> 3.1.13)
-      graphql
-      jwt
-      mail (~> 2.7.1)
-      omniauth-multi-provider
-      omniauth-saml
-      rack (>= 2.1.4)
-      rack-contrib
-      rack-oauth2
-      rake
-      rodauth (~> 2.5.0)
-      sequel (~> 5.37.0)
-      sequel-activerecord_connection (~> 0.3)
-      sinatra
-      sinatra-activerecord
-      sinatra-contrib
-
-GIT
   remote: https://github.com/jeremyevans/rodauth
   revision: b33d58cb5d7f8a7a773329a903273a77d5a0d73c
   specs:
@@ -100,6 +76,24 @@ GEM
     omniauth-saml (1.10.3)
       omniauth (~> 1.3, >= 1.3.2)
       ruby-saml (~> 1.9)
+    osso (0.0.5)
+      activesupport (>= 6.0.3.2)
+      bcrypt (~> 3.1.13)
+      graphql
+      jwt
+      mail (~> 2.7.1)
+      omniauth-multi-provider
+      omniauth-saml
+      rack (>= 2.1.4)
+      rack-contrib
+      rack-oauth2
+      rake
+      rodauth (~> 2.5.0)
+      sequel (~> 5.37.0)
+      sequel-activerecord_connection (~> 0.3)
+      sinatra
+      sinatra-activerecord
+      sinatra-contrib
     parallel (1.19.2)
     parser (2.7.2.0)
       ast (~> 2.4.1)
@@ -188,7 +182,7 @@ GEM
     tzinfo (1.2.7)
       thread_safe (~> 0.1)
     unicode-display_width (1.7.0)
-    webmock (3.9.3)
+    webmock (3.10.0)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
@@ -204,7 +198,7 @@ DEPENDENCIES
   factory_bot
   faker
   graphql
-  osso!
+  osso
   pg
   posthog-ruby
   pry
@@ -218,7 +212,7 @@ DEPENDENCIES
   sentry-raven
   simplecov (= 0.17)
   sinatra
-  webmock (~> 3.9)
+  webmock (~> 3.10)
 
 RUBY VERSION
    ruby 2.6.6p146
