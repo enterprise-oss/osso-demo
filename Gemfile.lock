@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/jeremyevans/rodauth
-  revision: b33d58cb5d7f8a7a773329a903273a77d5a0d73c
+  revision: 9a391fc8d3bc03defbb82cd231f5e9f69a77db5b
   specs:
     rodauth (2.5.0)
       roda (>= 2.6.0)
@@ -122,7 +122,7 @@ GEM
     rake (13.0.1)
     regexp_parser (1.8.2)
     rexml (3.2.4)
-    roda (3.37.0)
+    roda (3.38.0)
       rack
     rspec (3.10.0)
       rspec-core (~> 3.10.0)
