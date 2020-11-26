@@ -64,7 +64,7 @@
     "@ant-design/icons": "^4.2.2",
     "@apollo/client": "^3.2.5",
     "@enterprise-oss/ant-theme": "^1.0.6",
-    "@enterprise-oss/osso": "^0.0.9-alpha.10",
+    "@enterprise-oss/osso": "^0.1.0",
     "@sentry/react": "^5.25.0",
     "@sentry/tracing": "^5.25.0",
     "antd": "^4.8.3",

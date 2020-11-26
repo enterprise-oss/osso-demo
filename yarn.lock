@@ -42,10 +42,10 @@
     lodash "^4.17.15"
     resize-observer-polyfill "^1.5.0"
 
-"@apollo/client@^3.0.0-rc.10", "@apollo/client@^3.2.5":
-  version "3.2.5"
-  resolved "https://registry.yarnpkg.com/@apollo/client/-/client-3.2.5.tgz#24e0a6faa1d231ab44807af237c6227410c75c4d"
-  integrity sha512-zpruxnFMz6K94gs2pqc3sidzFDbQpKT5D6P/J/I9s8ekHZ5eczgnRp6pqXC86Bh7+44j/btpmOT0kwiboyqTnA==
+"@apollo/client@^3.2.5", "@apollo/client@^3.2.7":
+  version "3.2.9"
+  resolved "https://registry.yarnpkg.com/@apollo/client/-/client-3.2.9.tgz#a24a7792519adb3af8a74a60d9e83732238d0afd"
+  integrity sha512-AUvYITKhJNfRNU/Cf8t/N628ADdVah1+l9Qtjd09IwScRfDGvbBTkHMAgcb6hl7vuBVqGwQRq6fPKzHgWRlisg==
   dependencies:
     "@graphql-typed-document-node/core" "^3.0.0"
     "@types/zen-observable" "^0.8.0"
@@ -57,7 +57,7 @@
     optimism "^0.13.0"
     prop-types "^15.7.2"
     symbol-observable "^2.0.0"
-    ts-invariant "^0.4.4"
+    ts-invariant "^0.5.0"
     tslib "^1.10.0"
     zen-observable "^0.8.14"
 
@@ -1305,19 +1305,20 @@
   resolved "https://registry.yarnpkg.com/@enterprise-oss/ant-theme/-/ant-theme-1.0.6.tgz#13d9bcc4eeaf1c504cda00d3082e02e229de1181"
   integrity sha512-tDX/UmaqsDZFSxQdZnldA1e+xENXZ5VKrqGwpNplQ5Nknf4n/z2b4dtcyHvE1LtdRYD0+pqTwhrh67BMiGGqEg==
 
-"@enterprise-oss/osso@^0.0.9-alpha.10":
-  version "0.0.9-alpha.10"
-  resolved "https://registry.yarnpkg.com/@enterprise-oss/osso/-/osso-0.0.9-alpha.10.tgz#960acd9deee365120f573a3b9dd7252836695e4b"
-  integrity sha512-627MUakXqLoo3zVxdwXZFdCPl5X1+9jAG7ty8IVbwZsXv2HIWQcOu6KDwcRPbwb+AMDk6QthIbxKko3D6qgQFw==
+"@enterprise-oss/osso@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@enterprise-oss/osso/-/osso-0.1.0.tgz#e5f6f2f045bf3ae74d742f2ea86e15251a7429ae"
+  integrity sha512-FTzPNkVV6NoK2N6Z/aXOQTtdz7YVJDxKnFBrNCvS8pgkK39b1abgs4hSSB27TDQI4NzdOOCB4UFVlSOUAtOGtg==
   dependencies:
-    "@apollo/client" "^3.0.0-rc.10"
-    "@pdf-lib/fontkit" "^1.0.0"
+    "@apollo/client" "^3.2.7"
+    "@pdf-lib/fontkit" "^1.1.0"
     apollo-link-context "^1.0.20"
     base64-arraybuffer "^0.2.0"
     downloadjs "^1.4.7"
     fast-xml-parser "^3.17.4"
-    graphql "^15.1.0"
-    pdf-lib "^1.9.0"
+    graphql "^15.4.0"
+    graphql-tag "^2.11.0"
+    pdf-lib "^1.12.0"
 
 "@eslint/eslintrc@^0.2.1":
   version "0.2.1"
@@ -2416,10 +2417,10 @@
     chrome-trace-event "^1.0.2"
     nullthrows "^1.1.1"
 
-"@pdf-lib/fontkit@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@pdf-lib/fontkit/-/fontkit-1.0.0.tgz#26249d7ba865714625bafeecb5677796037e8051"
-  integrity sha512-C1Hn6wqRMAXZMW5vTa/oCvcTPq0FQsqKKP2mzzzMxUcx0BWZuJKeH4ZRS320y0LKvRBEs1ntFG2txstSsMGr2g==
+"@pdf-lib/fontkit@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@pdf-lib/fontkit/-/fontkit-1.1.0.tgz#fbef250fece95c754a05a63928a1fd3ac4e73e78"
+  integrity sha512-fauG8mgiOIuPrySuvqxvly7w/3RsBmsBuy/AmzkToIR9dB0CUoEN7gffGte/26aFrZz/lRp1715CbiuZ0lxf2Q==
   dependencies:
     pako "^1.0.6"
 
@@ -6132,7 +6133,7 @@ graphql-tag@^2.11.0:
   resolved "https://registry.yarnpkg.com/graphql-tag/-/graphql-tag-2.11.0.tgz#1deb53a01c46a7eb401d6cb59dec86fa1cccbffd"
   integrity sha512-VmsD5pJqWJnQZMUeRwrDhfgoyqcfwEkvtpANqcoUG8/tOLkwNgU9mzub/Mc78OJMhHjx7gfAMTxzdG43VGg3bA==
 
-graphql@^15.1.0:
+graphql@^15.4.0:
   version "15.4.0"
   resolved "https://registry.yarnpkg.com/graphql/-/graphql-15.4.0.tgz#e459dea1150da5a106486ba7276518b5295a4347"
   integrity sha512-EB3zgGchcabbsU9cFe1j+yxdzKQKAbGUWRb13DsrsMN1yyfmmIq+2+L5MqVWcDCE4V89R5AyUOi7sMOGxdsYtA==
@@ -8960,10 +8961,10 @@ pbkdf2@^3.0.3:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-pdf-lib@^1.9.0:
-  version "1.11.2"
-  resolved "https://registry.yarnpkg.com/pdf-lib/-/pdf-lib-1.11.2.tgz#8a95f98523944f3c16957bd6fa51a2e1d97fcfd1"
-  integrity sha512-iRnG3/dbh5EmPKQtE/JpPD4fCucsMcVccD111pcoX08U16ZIMtZnfTwsphT3GXpwUR+Md0tGTd8z7nkL50nNwg==
+pdf-lib@^1.12.0:
+  version "1.12.0"
+  resolved "https://registry.yarnpkg.com/pdf-lib/-/pdf-lib-1.12.0.tgz#e67f3e9f6287b9a2be2422cbd3871ec3e83e39fc"
+  integrity sha512-5gqG/w8QMhl/NfzqqIt1WddVHnW3kr+J/2LadP3GT0jAdGKoB0l4h/C4pzzK40b0AlBe2fr1Mvo9ZfR24set5A==
   dependencies:
     "@pdf-lib/standard-fonts" "^1.0.0"
     "@pdf-lib/upng" "^1.0.1"
@@ -11500,10 +11501,17 @@ tr46@^2.0.2:
   dependencies:
     punycode "^2.1.1"
 
-ts-invariant@^0.4.0, ts-invariant@^0.4.4:
+ts-invariant@^0.4.0:
   version "0.4.4"
   resolved "https://registry.yarnpkg.com/ts-invariant/-/ts-invariant-0.4.4.tgz#97a523518688f93aafad01b0e80eb803eb2abd86"
   integrity sha512-uEtWkFM/sdZvRNNDL3Ehu4WVpwaulhwQszV8mrtcdeE8nN00BV9mAmQ88RkrBhFgl9gMgvjJLAQcZbnPXI9mlA==
+  dependencies:
+    tslib "^1.9.3"
+
+ts-invariant@^0.5.0:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/ts-invariant/-/ts-invariant-0.5.1.tgz#4171fdb85f72a40381c147afd97c12154ada2abc"
+  integrity sha512-k3UpDNrBZpqJFnAAkAHNmSHtNuCxcU6xLiziPgalHRKZHme6T6jnKC8CcXDmk1zbHLQM8pc+rNC1Q6FvXMAl+g==
   dependencies:
     tslib "^1.9.3"
 
