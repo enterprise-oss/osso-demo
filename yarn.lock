@@ -9467,10 +9467,10 @@ postcss@^8.0.5, postcss@^8.1.7:
     nanoid "^3.1.16"
     source-map "^0.6.1"
 
-posthog-js@^1.4.5:
-  version "1.4.5"
-  resolved "https://registry.yarnpkg.com/posthog-js/-/posthog-js-1.4.5.tgz#b16235afe47938bd71eaed4ede3790c8b910ed71"
-  integrity sha512-Rzc5/DpuX55BqwNEbZB0tLav1gEinnr5H+82cbLiMtXLADlxmCwZiEaVXcC3XOqW0x8bcAEehicx1TbpfBamzA==
+posthog-js@^1.7.2:
+  version "1.7.2"
+  resolved "https://registry.yarnpkg.com/posthog-js/-/posthog-js-1.7.2.tgz#edacb90413630f85db0ec317a7d687704b3101fb"
+  integrity sha512-iv/2LTHFRFOrf4xih40Soa1tUNNIcg21LMP7rtUjAeg+TFJEToBPkUgp93b7tT1VXblN2irJHS7ELEo9EriJAQ==
 
 posthtml-parser@^0.4.1:
   version "0.4.2"
