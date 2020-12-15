@@ -35,7 +35,7 @@ oauth_client = Osso::Models::OauthClient.create!(
 )
 
 
-callback_uris.each do |uri, index|
+callback_uris.each_with_index do |uri, index|
   Osso::Models::RedirectUri.create(
     oauth_client: oauth_client,
     uri: uri,
