@@ -51,7 +51,7 @@ customer = Osso::Models::EnterpriseAccount.create!(
 
 test_idp = Osso::Models::IdentityProvider.create!(
   sso_cert: demo_idp_cert,
-  sso_url: 'https://idp-osso.herokuapp.com',
+  sso_url: 'https://idp-osso.herokuapp.com/saml-login',
   domain: 'example.com',
   enterprise_account: customer,
   oauth_client: oauth_client,
