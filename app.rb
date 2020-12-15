@@ -7,10 +7,7 @@ require_relative 'lib/analytics' unless ENV['POSTHOG_API_KEY'].nil?
 
 class App < Sinatra::Base
   include Osso::AppConfig
-  include Osso::Helpers::Auth
-  use Osso::Auth
-  use Osso::Oauth
-  use Osso::Admin
+  include Osso::RouteMap
 
   register Sinatra::ActiveRecordExtension
 
