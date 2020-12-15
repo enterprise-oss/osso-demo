@@ -24,8 +24,8 @@ hlYTLC++fXIqgXlZXFwjjoWmze9+xWs+JXCN8K9hZ+YA13E8kLKcTHAD
 CERT
 
 callback_uris = [
-  'http://localhost:4567/auth/osso/callback',
-  'http://127.0.0.1:3000/users/auth/osso/callback',
+  'http://localhost:4567/auth/osso/callback', # sinatra omniauth
+  'http://127.0.0.1:3000/users/auth/osso/callback', # devise (rails) omniauth
 ]
 
 oauth_client = Osso::Models::OauthClient.create!(
@@ -35,10 +35,11 @@ oauth_client = Osso::Models::OauthClient.create!(
 )
 
 
-callback_uris.each do |uri|
+callback_uris.each do |uri, index|
   Osso::Models::RedirectUri.create(
     oauth_client: oauth_client,
     uri: uri,
+    primary: index == 0,
   )
 end
 
