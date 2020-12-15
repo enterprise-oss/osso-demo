@@ -54,6 +54,7 @@ test_idp = Osso::Models::IdentityProvider.create!(
   sso_url: 'https://isp-osso.herokuapp.com',
   domain: 'example.com',
   enterprise_account: customer,
+  oauth_client: oauth_client,
   status: 'ACTIVE',
   service: 'AZURE' # TODO: add either generic SAML or Osso Test as providers
 )
