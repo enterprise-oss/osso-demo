@@ -66,6 +66,7 @@
     "@enterprise-oss/ant-theme": "^1.0.6",
     "@enterprise-oss/osso": "^0.1.0-alpha.1",
     "@sentry/react": "^5.29.0",
+    "@sentry/tracing": "^5.29.0",
     "antd": "^4.8.5",
     "date-fns": "^2.16.1",
     "fast-xml-parser": "^3.17.4",
