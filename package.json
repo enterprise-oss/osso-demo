@@ -70,7 +70,7 @@
     "@sentry/tracing": "^5.29.0",
     "antd": "^4.9.3",
     "date-fns": "^2.16.1",
-    "fast-xml-parser": "^3.17.4",
+    "fast-xml-parser": "^3.17.5",
     "posthog-js": "^1.4.5",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
