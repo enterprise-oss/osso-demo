@@ -23,11 +23,25 @@ hlYTLC++fXIqgXlZXFwjjoWmze9+xWs+JXCN8K9hZ+YA13E8kLKcTHAD
 -----END CERTIFICATE-----
 CERT
 
+callback_uris = [
+  'http://localhost:4567/auth/osso/callback',
+  'http://127.0.0.1:3000/users/auth/osso/callback',
+]
+
 oauth_client = Osso::Models::OauthClient.create!(
   name: 'Demo Production',
   identifier: 'demo-client-id',
   secret: 'demo-client-secret'
 )
+
+
+callback_uris.each do |uri|
+  Osso::Models::RedirectUri.create(
+    oauth_client: oauth_client,
+    uri: uri,
+  )
+end
+
 
 customer = Osso::Models::EnterpriseAccount.create!(
   name: 'SaaS Co Customer',
