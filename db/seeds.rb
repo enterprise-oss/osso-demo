@@ -24,10 +24,12 @@ hlYTLC++fXIqgXlZXFwjjoWmze9+xWs+JXCN8K9hZ+YA13E8kLKcTHAD
 CERT
 
 callback_uris = [
+  'https://sp.ossoapp.io/auth/osso/callback',
   'http://localhost:4567/auth/osso/callback', # sinatra omniauth
   'http://127.0.0.1:3000/users/auth/osso/callback', # devise (rails) omniauth
-  'http://localhost:3000/auth/osso/callback',
-  'http://localhost:8000/auth/osso/callback' # node passport-osso
+  'http://localhost:3000/auth/osso/callback', # devise (rails) omniauth
+  'http://localhost:8000/auth/osso/callback', # node passport-osso
+  'https://nextjs-demo.ossoapp.com/api/auth/callback/osso',
 ]
 
 oauth_client = Osso::Models::OauthClient.create!(
