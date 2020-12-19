@@ -26,6 +26,8 @@ CERT
 callback_uris = [
   'http://localhost:4567/auth/osso/callback', # sinatra omniauth
   'http://127.0.0.1:3000/users/auth/osso/callback', # devise (rails) omniauth
+  'http://localhost:3000/auth/osso/callback',
+  'http://localhost:8000/auth/osso/callback' # node passport-osso
 ]
 
 oauth_client = Osso::Models::OauthClient.create!(
