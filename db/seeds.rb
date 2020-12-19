@@ -63,13 +63,12 @@ demo_idp_cert = ENV['ENTERPRISE_OSS_OKTA_CERT']
 
 if demo_idp_cert
   demo_customer = Osso::Models::EnterpriseAccount.create!(
-    name: 'EmterpriseOSS',
+    name: 'EnterpriseOSS',
     domain: 'enterpriseoss.dev',
   )
 
-  test_idp = Osso::Models::IdentityProvider.create!(
+  demo_idp = Osso::Models::IdentityProvider.create!(
     id: "5d606919-1717-41ba-bfa3-8abda6cfea8e",
-    sso_issuer: 'enterpriseoss.dev',
     sso_cert: demo_idp_cert,
     sso_url: 'https://dev-634049.okta.com/app/dev-634049_ossodemo_1/exk1m96glaUlmZ2A04x7/sso/saml',
     domain: 'enterpriseoss.dev',
@@ -78,6 +77,9 @@ if demo_idp_cert
     status: 'ACTIVE',
     service: 'OKTA'
   )
+
+  # TODO: our before_create hook means we can't provide this as a create option
+  demo_idp.update(sso_issuer: 'enterpriseoss.dev')
 end
 
 Osso::Models::AppConfig.create!(
