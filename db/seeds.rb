@@ -34,7 +34,6 @@ oauth_client = Osso::Models::OauthClient.create!(
   secret: 'demo-client-secret'
 )
 
-
 callback_uris.each_with_index do |uri, index|
   Osso::Models::RedirectUri.create(
     oauth_client: oauth_client,
@@ -42,7 +41,6 @@ callback_uris.each_with_index do |uri, index|
     primary: index == 0,
   )
 end
-
 
 customer = Osso::Models::EnterpriseAccount.create!(
   name: 'SaaS Co Customer',
@@ -58,6 +56,27 @@ test_idp = Osso::Models::IdentityProvider.create!(
   status: 'ACTIVE',
   service: 'AZURE' # TODO: add either generic SAML or Osso Test as providers
 )
+
+demo_idp_cert = ENV['ENTERPRISE_OSS_OKTA_CERT']
+
+if demo_idp_cert
+  demo_customer = Osso::Models::EnterpriseAccount.create!(
+    name: 'EmterpriseOSS',
+    domain: 'enterpriseoss.dev',
+  )
+
+  test_idp = Osso::Models::IdentityProvider.create!(
+    id: "5d606919-1717-41ba-bfa3-8abda6cfea8e",
+    sso_issuer: 'enterpriseoss.dev',
+    sso_cert: demo_idp_cert,
+    sso_url: 'https://dev-634049.okta.com/app/dev-634049_ossodemo_1/exk1m96glaUlmZ2A04x7/sso/saml',
+    domain: 'enterpriseoss.dev',
+    enterprise_account: demo_customer,
+    oauth_client: oauth_client,
+    status: 'ACTIVE',
+    service: 'OKTA'
+  )
+end
 
 Osso::Models::AppConfig.create!(
   name: 'SaaS App',
