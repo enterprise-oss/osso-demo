@@ -70,7 +70,7 @@
     "antd": "^4.9.4",
     "date-fns": "^2.16.1",
     "fast-xml-parser": "^3.17.4",
-    "posthog-js": "^1.4.5",
+    "posthog-js": "^1.8.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-copy-to-clipboard": "^5.0.2",
