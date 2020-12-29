@@ -71,7 +71,7 @@ GEM
     omniauth-saml (1.10.3)
       omniauth (~> 1.3, >= 1.3.2)
       ruby-saml (~> 1.9)
-    osso (0.0.8)
+    osso (0.0.10)
       activesupport (>= 6.0.3.2)
       bcrypt (~> 3.1.13)
       graphql
@@ -83,7 +83,7 @@ GEM
       rack-contrib
       rack-oauth2
       rake
-      rodauth (~> 2.6.0)
+      rodauth (>= 2.6, < 2.8)
       sequel (>= 5.37, < 5.40)
       sequel-activerecord_connection (>= 0.3, < 2.0)
       sinatra
@@ -119,7 +119,7 @@ GEM
     rexml (3.2.4)
     roda (3.39.0)
       rack
-    rodauth (2.6.0)
+    rodauth (2.7.0)
       roda (>= 2.6.0)
       sequel (>= 4)
     rspec (3.10.0)
@@ -177,7 +177,7 @@ GEM
       sinatra (= 2.1.0)
       tilt (~> 2.0)
     tilt (2.0.10)
-    tzinfo (2.0.3)
+    tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     unicode-display_width (1.7.0)
     webmock (3.11.0)
