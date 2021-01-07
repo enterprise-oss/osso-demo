@@ -9,7 +9,7 @@ source 'https://rubygems.org'
 gem 'activesupport', '>= 6.0.3.2'
 gem 'graphql'
 gem 'posthog-ruby'
-gem 'osso'
+gem 'osso', '= 0.0.11'
 gem 'pg'
 gem 'rack', '>= 2.1.4'
 gem 'rack-cors'
@@ -25,7 +25,7 @@ group :test do
   gem 'faker'
   gem 'rack-test'
   gem 'rspec', '~> 3.10'
-  gem 'simplecov', '= 0.17', require: false
+  gem 'simplecov', '0.21.1', require: false
   gem 'webmock', '~> 3.11'
 end
 

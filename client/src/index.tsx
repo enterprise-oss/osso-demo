@@ -1,7 +1,6 @@
 import './index.css';
 
 import * as Sentry from '@sentry/react';
-import { Integrations } from '@sentry/tracing';
 import posthog from 'posthog-js';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
@@ -12,8 +11,6 @@ import App from './App';
 if (process.env.CLIENT_SENTRY_DSN) {
   Sentry.init({
     dsn: process.env.CLIENT_SENTRY_DSN,
-    integrations: [new Integrations.BrowserTracing()],
-    tracesSampleRate: 1.0,
   });
 }
 
@@ -23,7 +20,7 @@ if (process.env.POSTHOG_TOKEN) {
   });
 
   posthog.register({
-    plan: process.env.OSSO_PLAN || 'community',
+    osso_plan: process.env.OSSO_PLAN || 'community',
   });
 }
 
