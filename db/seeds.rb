@@ -30,6 +30,7 @@ callback_uris = [
   'http://localhost:3000/auth/osso/callback', # devise (rails) omniauth
   'http://localhost:8000/auth/osso/callback', # node passport-osso
   'https://nextjs-demo.ossoapp.com/api/auth/callback/osso',
+  'http://localhost:9292/health', # CI
 ]
 
 oauth_client = Osso::Models::OauthClient.create!(
@@ -94,4 +95,25 @@ admin = Osso::Models::Account.create!(
   email: 'admin@saas.co',
   status_id: 2,
   role: 'admin',
+)
+
+ActiveRecord::Base.connection.execute(
+  <<~SQL
+    INSERT INTO account_password_hashes(id, password_hash) 
+    VALUES (#{"'" + admin.id + "'"}, #{"'" + BCrypt::Password.create("password", cost: BCrypt::Engine::MIN_COST).to_s + "'"});
+  SQL
+)
+
+base = Osso::Models::Account.create!(
+  email: 'basic@saas.co',
+  status_id: 2,
+  role: 'internal',
+  oauth_client_id: oauth_client.identifier,
+)
+
+ActiveRecord::Base.connection.execute(
+  <<~SQL
+    INSERT INTO account_password_hashes(id, password_hash) 
+    VALUES (#{"'" + base.id + "'"}, #{"'" + BCrypt::Password.create("password", cost: BCrypt::Engine::MIN_COST).to_s + "'"});
+  SQL
 )
