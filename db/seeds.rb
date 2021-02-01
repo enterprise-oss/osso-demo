@@ -144,7 +144,7 @@ nextjs_oauth_client = Osso::Models::OauthClient.create!(
   secret: 'nextjs-demo-client-secret'
 )
 
-nextjs_callback_uris.each_with_index do |uri, index|
+next_js_callback_uris.each_with_index do |uri, index|
   Osso::Models::RedirectUri.create(
     oauth_client: nextjs_oauth_client,
     uri: uri,
