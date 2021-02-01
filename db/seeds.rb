@@ -130,10 +130,10 @@ if okta_idp_cert
   )
 
   # TODO: our before_create hook means we can't provide this as a create option
-  demo_idp.update(sso_issuer: 'enterpriseoss.dev')
+  okta_idp.update(sso_issuer: 'enterpriseoss.dev')
 end
 
-
+# NEXTJS
 next_js_callback_uris = [
   'https://nextjs-demo.ossoapp.com/api/auth/callback/osso',
 ]
@@ -145,10 +145,10 @@ nextjs_oauth_client = Osso::Models::OauthClient.create!(
 )
 
 Osso::Models::IdentityProvider.create!(
-  sso_cert: example_com_customer,
+  sso_cert: demo_idp_cert,
   sso_url: 'https://idp.ossoapp.com/saml-login',
   domain: 'example.com',
-  enterprise_account: customer,
+  enterprise_account: example_com_customer,
   oauth_client: nextjs_oauth_client,
   status: 'ACTIVE',
   service: 'AZURE' # TODO: add either generic SAML or Osso Test as providers
