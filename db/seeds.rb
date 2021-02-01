@@ -70,7 +70,7 @@ demo_oauth_client = Osso::Models::OauthClient.create!(
 
 demo_callback_uris.each_with_index do |uri, index|
   Osso::Models::RedirectUri.create(
-    oauth_client: oauth_client,
+    oauth_client: demo_oauth_client,
     uri: uri,
     primary: index == 0,
   )
