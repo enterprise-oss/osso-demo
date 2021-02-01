@@ -144,6 +144,14 @@ nextjs_oauth_client = Osso::Models::OauthClient.create!(
   secret: 'nextjs-demo-client-secret'
 )
 
+nextjs_callback_uris.each_with_index do |uri, index|
+  Osso::Models::RedirectUri.create(
+    oauth_client: nextjs_oauth_client,
+    uri: uri,
+    primary: index == 0,
+  )
+end
+
 Osso::Models::IdentityProvider.create!(
   sso_cert: demo_idp_cert,
   sso_url: 'https://idp.ossoapp.com/saml-login',
