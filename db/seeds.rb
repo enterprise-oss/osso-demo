@@ -97,7 +97,7 @@ rails_oauth_client = Osso::Models::OauthClient.create!(
 )
 
 rails_callback_uris = [
-  'https://rails-demo.ossoapp.com/auth/osso/callback',
+  'https://rails-demo.ossoapp.com/users/auth/osso/callback',
   'http://127.0.0.1:3000/users/auth/osso/callback', # devise (rails) omniauth
   'http://localhost:3000/users/auth/osso/callback', # devise (rails) omniauth
 ]
