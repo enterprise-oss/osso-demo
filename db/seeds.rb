@@ -159,5 +159,5 @@ Osso::Models::IdentityProvider.create!(
   enterprise_account: example_com_customer,
   oauth_client: nextjs_oauth_client,
   status: 'ACTIVE',
-  service: 'AZURE' # TODO: add either generic SAML or Osso Test as providers
+  service: 'OTHER'
 )
