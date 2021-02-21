@@ -61,6 +61,7 @@ demo_callback_uris = [
   'http://localhost:8000/auth/osso/callback', # node passport-osso
   'http://localhost:9292/health', # CI
   'http://127.0.0.1:8000/complete/osso/', # python-social-auth
+  'http://localhost:3000/auth/callback/osso', # supertokens
 ]
 
 demo_oauth_client = Osso::Models::OauthClient.create!(
