@@ -161,3 +161,32 @@ Osso::Models::IdentityProvider.create!(
   status: 'ACTIVE',
   service: 'OTHER'
 )
+
+# supertokens
+supertokens_callback_uris = [
+  'https://nextjs-demo.ossoapp.com/api/auth/callback/osso',
+]
+
+supertokens_oauth_client = Osso::Models::OauthClient.create!(
+  name: 'SuperTokens Demo',
+  identifier: 'supertokens-demo-client-id',
+  secret: 'supertokens-demo-client-secret'
+)
+
+supertokens_callback_uris.each_with_index do |uri, index|
+  Osso::Models::RedirectUri.create(
+    oauth_client: supertokens_oauth_client,
+    uri: uri,
+    primary: index == 0,
+  )
+end
+
+Osso::Models::IdentityProvider.create!(
+  sso_cert: demo_idp_cert,
+  sso_url: 'https://idp.ossoapp.com/saml-login',
+  domain: 'example.com',
+  enterprise_account: example_com_customer,
+  oauth_client: supertokens_oauth_client,
+  status: 'ACTIVE',
+  service: 'OTHER'
+)
