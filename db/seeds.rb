@@ -60,6 +60,7 @@ demo_callback_uris = [
   'http://localhost:3000/auth/osso/callback', # rails omniauth
   'http://localhost:8000/auth/osso/callback', # node passport-osso
   'http://localhost:9292/health', # CI
+  'http://127.0.0.1:8000/complete/osso/', # python-social-auth
 ]
 
 demo_oauth_client = Osso::Models::OauthClient.create!(
@@ -164,7 +165,8 @@ Osso::Models::IdentityProvider.create!(
 
 # supertokens
 supertokens_callback_uris = [
-  'https://nextjs-demo.ossoapp.com/api/auth/callback/osso',
+  'https://supertokens-demo.ossoapp.com/auth/callback/osso',
+  'http://localhost:3000/auth/callback/osso',
 ]
 
 supertokens_oauth_client = Osso::Models::OauthClient.create!(
