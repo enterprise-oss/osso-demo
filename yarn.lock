@@ -1913,6 +1913,13 @@
   dependencies:
     "@parcel/types" "2.0.0-nightly.600+f28eaf60"
 
+"@parcel/plugin@2.0.0-nightly.648+4949f153":
+  version "2.0.0-nightly.648"
+  resolved "https://registry.yarnpkg.com/@parcel/plugin/-/plugin-2.0.0-nightly.648.tgz#90a2c0c2751ef0cdd85a77653cfea69019a1a22d"
+  integrity sha512-sq1KO7we8rV4Dvn4wGEYRA3Pmg3cNeEZOyFSmKmnDlSoA5g2iqMQi979NCvtx2CY80/iAynD3Pmx7vag4s6pSA==
+  dependencies:
+    "@parcel/types" "2.0.0-nightly.648+4949f153"
+
 "@parcel/reporter-cli@2.0.0-nightly.600+f28eaf60":
   version "2.0.0-nightly.600"
   resolved "https://registry.yarnpkg.com/@parcel/reporter-cli/-/reporter-cli-2.0.0-nightly.600.tgz#5f20d745e4da8f16f8bab9b3ef73d3a3ab7524d3"
@@ -2063,12 +2070,12 @@
     "@parcel/plugin" "2.0.0-nightly.600+f28eaf60"
     json5 "^2.1.0"
 
-"@parcel/transformer-less@2.0.0-nightly.600":
-  version "2.0.0-nightly.600"
-  resolved "https://registry.yarnpkg.com/@parcel/transformer-less/-/transformer-less-2.0.0-nightly.600.tgz#78d5729c22e77e76e1cac17a01b94170bef96fa0"
-  integrity sha512-AsCOJkKmsKmmwTm7qCSi6aOo3j6ySPq4otV/G/nsyh/iBHSYVC5p0m3IzbIgxw2Ee1N4wfE9hbYzNIBS684xEQ==
+"@parcel/transformer-less@2.0.0-nightly.648":
+  version "2.0.0-nightly.648"
+  resolved "https://registry.yarnpkg.com/@parcel/transformer-less/-/transformer-less-2.0.0-nightly.648.tgz#4e33f50965344f08b2af51934f1a6a2dd91775eb"
+  integrity sha512-UTDyEFxyrIS19h2t19B91dSxMS0RvyrQabooL7z3PPeRlq4Z7OlJgVTlFnKH4rf8yBD8xjkU3BOW6LtR5KDrFw==
   dependencies:
-    "@parcel/plugin" "2.0.0-nightly.600+f28eaf60"
+    "@parcel/plugin" "2.0.0-nightly.648+4949f153"
     "@parcel/source-map" "2.0.0-alpha.4.21"
     less "^3.9.0"
 
@@ -2131,6 +2138,11 @@
   version "2.0.0-nightly.600"
   resolved "https://registry.yarnpkg.com/@parcel/types/-/types-2.0.0-nightly.600.tgz#7960ceef58c99d0a08b386e0d426a524bea5deb8"
   integrity sha512-0cNRLMTNSgKGmphlCckCLtp+vDpgmVoys0opfrI4Pn71Lma+l839hOklrhr6lIA6DF9IRy2V/DTmSb6o2XeAig==
+
+"@parcel/types@2.0.0-nightly.648+4949f153":
+  version "2.0.0-nightly.648"
+  resolved "https://registry.yarnpkg.com/@parcel/types/-/types-2.0.0-nightly.648.tgz#d7fcbcb0621243661a0d9e741f56894ff9ada0c7"
+  integrity sha512-qxMncCWln7EQtvICCInxQbtqQsbU+mWpewkEVgDofgDt60mZmP7VADagx6RMd9Ff7k4D1aFvtatvAgAQAMKLfw==
 
 "@parcel/utils@2.0.0-nightly.600+f28eaf60":
   version "2.0.0-nightly.600"
@@ -7480,22 +7492,7 @@ lcid@^2.0.0:
   dependencies:
     invert-kv "^2.0.0"
 
-less@^3.11.1:
-  version "3.13.0"
-  resolved "https://registry.yarnpkg.com/less/-/less-3.13.0.tgz#6a47bb19d97edcf7a53d444b099275dd6b17c85a"
-  integrity sha512-uPhr9uoSGVKKYVGz0rXcYBK1zjwcIWRGcbnSgNt66XuIZYrYPaQiS+LeUOvqedBwrwdBYYaLqSff5ytGYuT7rA==
-  dependencies:
-    tslib "^1.10.0"
-  optionalDependencies:
-    errno "^0.1.1"
-    graceful-fs "^4.1.2"
-    image-size "~0.5.0"
-    make-dir "^2.1.0"
-    mime "^1.4.1"
-    native-request "^1.0.5"
-    source-map "~0.6.0"
-
-less@^3.9.0:
+less@^3.11.1, less@^3.9.0:
   version "3.13.1"
   resolved "https://registry.yarnpkg.com/less/-/less-3.13.1.tgz#0ebc91d2a0e9c0c6735b83d496b0ab0583077909"
   integrity sha512-SwA1aQXGUvp+P5XdZslUOhhLnClSLIjWvJhmd+Vgib5BFIr9lMNlQwmwUNOjXThF/A0x+MCYYPeWEfeWiLRnTw==
